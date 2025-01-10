@@ -15,19 +15,19 @@ services:
     image: elenagruzintseva/kittygram_backend
     env_file: .env
     volumes:
-      - static:/backend_static
-      - media:/...
+      - static:/backend_static/
+      - media:/media/
   frontend:
     image: elenagruzintseva/kittygram_frontend
     env_file: .env
-    command: cp -r /app/build/. /frontend_static/
+    command: cp -r /app/build/. /static/
     volumes:
-      - static:/frontend_static
+      - static:/static/
   gateway:
     image: elenagruzintseva/kittygram_gateway
     env_file: .env
     volumes:
-      - static:/staticfiles/
-      - media:/...
+      - static:/static/
+      - media:/media/
     ports:
       - 9000:80
