@@ -135,7 +135,7 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
-    - name: Copy docker-compose.production.yml via ssh
+    - name: Copy docker-compose.yml via ssh
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -169,4 +169,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: github.actor выполнил деплой kittygram!
+        message: выполнил деплой kittygram!
