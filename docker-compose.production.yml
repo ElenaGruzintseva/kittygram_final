@@ -29,7 +29,7 @@ services:
     image: elenagruzintseva/kittygram_gateway
     env_file: .env
     volumes:
-      - static:/staticfiles/
+      - static:/collected_static/
       - media:/media/
     ports:
       - 9000:80
