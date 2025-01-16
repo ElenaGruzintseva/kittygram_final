@@ -51,6 +51,7 @@ docker-compose -f docker-compose.production.yml exec backend python manage.py mi
 docker-compose -f docker-compose.production.yml exec backend python manage.py collectstatic --noinput
 ```
 
+
 ### Для автоматизации развертывания и тестирования проекта можно использовать GitHub Actions
 
 Ознакомьтесь с файлом конфигурации GitHub Actions (kittygram_workflow.yml), который содержит шаги для тестирования и сборки.
