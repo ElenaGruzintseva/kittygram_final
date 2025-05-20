@@ -1,5 +1,6 @@
 ![Workflow Status](https://github.com/ElenaGruzintseva/kittygram_final/actions/workflows/main.yml/badge.svg)
 
+Проект доступен по адресу: https://kittygramproject.zapto.org/
 # Kittygram
 
 Kittygram — это сервис для хранения информации о котиках. Здесь вы можете добавлять, редактировать и удалять информацию о своих котиках. Каждый котик имеет фото, имя, возраст и достижения. Чужих котиков удалять нельзя.
